@@ -1,18 +1,16 @@
-public class Favorito {
+public class Categoria {
 
     private int id;
-    private Usuario usuario;
-    private Produto produto;
+    private String nome;
 
-    public Favorito() {
+    public Categoria() {
     }
 
-    public Favorito(int id, Usuario usuario, Produto produto) {
+    public Categoria(int id, String nome) {
         this.id = id;
-        this.usuario = usuario;
-        this.produto = produto;
+        this.nome = nome;
     }
-	
+
 
     public int getId() {
         return id;
@@ -22,19 +20,11 @@ public class Favorito {
         this.id = id;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public String getNome() {
+        return nome;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public Produto getProduto() {
-        return produto;
-    }
-
-    public void setProduto(Produto produto) {
-        this.produto = produto;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
